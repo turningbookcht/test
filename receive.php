@@ -15,7 +15,7 @@
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-				'Authorization: Bearer iwrzgLijcwTJ/NoUAVC1ezQSJg55q2Bd3DFex1HHgkryJCZMiPY67MvVgfD9O9MsDjAYlYdMubL/I+nrQ3EsNZjtpIoGIo5XX1H0sxHHQAO7Oq+boIBwI8ftVJmluRjDfIMcmH84F/56KDV6W6JOZQdB04t89/1O/w1cDnyilFU=
+				'Authorization: Bearer Urx7a0I4QIuDhaNdVaqmicAxIqD8zCj41d0leh0paaZ8vUFlXCe2x84uOEts+qkoDjAYlYdMubL/I+nrQ3EsNZjtpIoGIo5XX1H0sxHHQAN98XBzIXRqAu7MM+fMht6B7W8uhq12Oyd9FhEFrflI3wdB04t89/1O/w1cDnyilFU=',
 			));
 				
 			$json_content = curl_exec($ch);
@@ -65,7 +65,7 @@ $header[] = "Content-Type: application/json";
 			);
  //回傳給line server
  $header[] = "Content-Type: application/json";
- $header[] = "Authorization: Bearer iwrzgLijcwTJ/NoUAVC1ezQSJg55q2Bd3DFex1HHgkryJCZMiPY67MvVgfD9O9MsDjAYlYdMubL/I+nrQ3EsNZjtpIoGIo5XX1H0sxHHQAO7Oq+boIBwI8ftVJmluRjDfIMcmH84F/56KDV6W6JOZQdB04t89/1O/w1cDnyilFU=";
+ $header[] = "Authorization: Bearer Urx7a0I4QIuDhaNdVaqmicAxIqD8zCj41d0leh0paaZ8vUFlXCe2x84uOEts+qkoDjAYlYdMubL/I+nrQ3EsNZjtpIoGIo5XX1H0sxHHQAN98XBzIXRqAu7MM+fMht6B7W8uhq12Oyd9FhEFrflI3wdB04t89/1O/w1cDnyilFU=";
  $ch = curl_init($line_server_url);                                                                      
  curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
  curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($response));                                                                  
