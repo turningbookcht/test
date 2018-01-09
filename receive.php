@@ -6,7 +6,7 @@
  $sender_txt = $json_obj->events[0]->message->text;
  $sender_replyToken = $json_obj->events[0]->replyToken;
  $response = array (
-				"replyToken" => $sender_replyToken,
+				"reply" => $sender_replyToken,
 				"messages" => array (
 					array (
 						"type" => "text",
@@ -19,7 +19,7 @@
  fclose($myfile);
  //回傳給line server
  $header[] = "Content-Type: application/json";
- $header[] = "Authorization: Bearer iwrzgLijcwTJ/NoUAVC1ezQSJg55q2Bd3DFex1HHgkryJCZMiPY67MvVgfD9O9MsDjAYlYdMubL/I+nrQ3EsNZjtpIoGIo5XX1H0sxHHQAO7Oq+boIBwI8ftVJmluRjDfIMcmH84F/56KDV6W6JOZQdB04t89/1O/w1cDnyilFU=";
+ $header[] = "Authorization: Bearer n4mZIQp9UqWXhCEgIg1fLmyjUeDMgCe/bF+4EOBDZ7fGscOgNGFsHTr3fGco/E7A5hq7A7jiDszSCk/j3pVVPbx7nf0E+FKe5jX6syQGOxO7kwp5lmZ3zRES1qxceq/N+/E9Qy5gSDbBx56l8sScTwdB04t89/1O/w1cDnyilFU=";
  $ch = curl_init("https://api.line.me/v2/bot/message/reply");                                                                      
  curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
  curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($response));                                                                  
